@@ -9,3 +9,6 @@ confetti.create(document.getElementById('canvas'), {
   resize: true,
   useWorker: true,
 })({ particleCount: 200, spread: 200 });
+
+const worker = new Worker('/_dist_/worker/hello.js', {type: 'module'});
+
